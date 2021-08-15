@@ -1,0 +1,29 @@
+<resources>
+    <string name="empty"></string>
+    <string name="app_name">PAP</string>
+    <string name="search_results">Resultados</string>
+    <string name="image_profile_goes_here">Image Profile Goes Here</string>
+    <string name="nome">Nome</string>
+    <string name="local">Local</string>
+    <string name="descri_ao">Descriçao</string>
+    <string name="google_maps">Google Maps</string>
+    <string name="login">Login</string>
+    <string name="sair">Sair</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="registar">Registar</string>
+    <string name="pesquisa_a_z1_9">Pesquisa (a-z1-9_)</string>
+    <string name="nome_de_utilizador">Nome de utilizador</string>
+    <string name="palavra_passe">Palavra passe</string>
+    <string name="confirmar_palavra_passe">Confirmar palavra passe</string>
+    <string name="endere_o_de_e_mail">Endereço de E-Mail</string>
+    <string name="comentar">Comentar</string>
+    <string name="_1_10">1-10</string>
+    <string name="comentario">Comentario</string>
+    <string name="voltar">Voltar</string>
+    <string name="comentarios">Comentarios</string>
+    <string name="ver_comentarios">Ver comentarios</string>
+    <string name="coment_rio">Comentário</string>
+    <string name="utilizador">Utilizador</string>
+    <string name="classifica_o">Classificação</string>
+    <string name="categoria">Categoria</string>
+</resources>

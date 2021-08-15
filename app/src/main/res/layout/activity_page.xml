@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ativProfileImage"
+        android:layout_width="132dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="24dp"
+
+        android:contentDescription="@string/image_profile_goes_here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toEndOf="@+id/loc"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loc"
+        android:layout_width="171dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/empty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/linkMapsButton"
+        android:layout_width="128dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/google_maps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toEndOf="@+id/loc"
+        app:layout_constraintTop_toBottomOf="@+id/ativProfileImage" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="171dp"
+        android:layout_height="331dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loc" />
+
+    <EditText
+        android:id="@+id/campoComentario"
+        android:layout_width="197dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="@string/comentario"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoRating"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <Button
+        android:id="@+id/botComentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:onClick="doComment"
+        android:text="@string/comentar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/campoComentario"
+        app:layout_constraintTop_toBottomOf="@+id/campoRating"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <EditText
+        android:id="@+id/campoRating"
+        android:layout_width="76dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/_1_10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc" />
+
+    <TextView
+        android:id="@+id/campoNomeAtivCom"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/campoComentario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/campoRating"
+        app:layout_constraintTop_toBottomOf="@+id/desc"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/botVerComentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/ver_comentarios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toEndOf="@+id/loc"
+        app:layout_constraintTop_toBottomOf="@+id/linkMapsButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
